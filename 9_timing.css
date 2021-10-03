@@ -1,0 +1,80 @@
+.linear{
+    animation: linear 2s linear infinite;
+
+}
+.ease{
+    animation: ease 2s ease infinite;
+
+}
+.ease-in{
+    animation: easein 2s ease-in infinite;
+
+}
+.ease-out{
+    animation: easeout 2s ease-out infinite;
+
+}
+.ease-in-out{
+    animation: easeinout 2s ease-in-out infinite;
+
+}
+.steps{
+    animation: steps 2s infinite;
+
+}
+
+@keyframes linear{
+    to {
+        transform:translateX(100vw)
+    }
+}
+@keyframes ease{
+    to {
+        transform:translateX(100vw)
+    }
+}
+@keyframes easein{
+    to {
+        transform:translateX(100vw)
+    }
+}
+@keyframes easeout{
+    to {
+        transform:translateX(100vw)
+    }
+}
+@keyframes easeinout{
+    to {
+        transform:translateX(100vw)
+    }
+}
+@keyframes steps{
+    0%{}
+    10%{
+        transform:translateX(10vw)
+    } 
+    25% {
+        transform:translateX(25vw)
+    }
+    50% {
+        transform:translateX(50vw)
+    }
+    75% {
+        transform:translateX(75vw)
+    }
+    90%{
+       
+            transform:translateX(90vw)}
+      
+
+    100%{
+        transform:translateX(100vw)
+    }
+}
+
+
+
+
+/* Create an animation class for each ball.<br />
+Make all the balls move from left to right in 2seconds, the only difference should be the timing function.<br />
+Use the timing-function described by the class. For steps, experiment with different number of steps. */
