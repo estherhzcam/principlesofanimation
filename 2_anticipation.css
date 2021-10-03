@@ -1,0 +1,14 @@
+
+button:hover {
+transform:scale(1.1);
+}
+.disappear {
+    animation: disappear 1s cubic-bezier(.64,.01,.61,.48) 1;
+}
+
+@keyframes disappear {
+    0% {}
+    15% {transform: translateY(-5vh)}
+    100%{transform: translateY(100vh)}
+    
+}
