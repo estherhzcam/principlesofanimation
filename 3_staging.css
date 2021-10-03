@@ -1,0 +1,13 @@
+.active{
+    z-index: 3;
+}
+
+#content .active {
+    animation: move 1s cubic-bezier(.28,.43,.45,.94) 1;
+}
+
+@keyframes move {
+    0%{transform:translate(-20vw)}
+    100%{transform:translate(0vw)}
+    
+}
