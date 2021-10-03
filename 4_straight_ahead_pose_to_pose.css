@@ -1,0 +1,63 @@
+#ball {
+    width: 5vw;
+    height: 5vw;
+    animation: up_down 2.58s 2s infinite;
+}
+#test {
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+    
+    #container {
+    animation: move-right 2.58s linear 2s infinite;
+}
+
+@keyframes move-right {
+    0%{
+        transform: translate(-2.5vw)
+    }
+    100%{
+        transform: translate(47vw)
+    }
+    
+}
+
+@keyframes up_down{
+    0% {
+        transform:translateY(-2.5vw);
+        animation-timing-function: ease-in;
+    }
+    /* Regarding tiny keyframes, you can add small things to the animation with them like a flash in the background color (Commented out)
+    28%{
+        background-color: transparent;
+    } */
+    30%{
+        transform:translateY(30vw);
+        animation-timing-function: ease-out;
+        /* background-color: blue; */
+    }
+    /* 32%{
+        background-color: transparent;
+    } */
+    45%{
+        transform: translateY(10vw);
+        animation-timing-function: ease-in;
+    }
+    60%{
+        transform:translateY(30vw);
+        animation-timing-function: ease-out;
+    }
+    75%{
+        transform: translateY(17vw);
+        animation-timing-function: ease-in;
+    }
+
+    80%{
+        transform:translateY(30vw);
+        animation-timing-function: ease-out;
+    }
+    85%{
+        transform: translateY(20vw);
+        animation-timing-function: ease-in;
+    }
+    100%{transform:translateY(30vw)}
+}
