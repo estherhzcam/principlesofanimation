@@ -1,21 +1,24 @@
 
 
 .show{
-    animation: show 2s ease-out 1 forwards;
+    animation: show 2s cubic-bezier(.28,.43,.45,.94) 1 forwards;
 }
 
 .hide{
-    animation: hide 5s ease-in 1 forwards;
+    animation: hide 2s cubic-bezier(.53,0,.37,.32) 1 forwards;
 }
 
 
 
 @keyframes show {
-    to {transform: translateX(20vw)}
-    
+   0%{transform: translateX(-20vw)}
+   95%{transform: translateX(1vw)}
+   100% {transform: translateX(0vw)}
 }
 
 @keyframes hide {
-    to {transform: translateX(-20vw)}
+    0%{}
+    5%{transform: translateX(1vw)}
+   100% {transform: translateX(-20vw)}
     
 }
