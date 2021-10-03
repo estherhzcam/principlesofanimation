@@ -1,0 +1,18 @@
+.addtocart{
+    offset-path: path('m 0,0 c 100,100 230,-100 220,-140');
+    animation: addtocart 2s ease-in 1;
+}
+
+@keyframes addtocart {
+    100%{
+offset-distance: 100%;}    
+}
+/* <p>
+          First create a class <code>addtocart</code> with a basic translate animation, that moves the button to the cart, when clicked.<br>
+          It is translated approximately 220, -140 pixels.</p>
+          <p>Then create a simple offset-path with just a single <b>m</b> and <b>c</b> (both lower-case), that goes in a straight line with 
+            the same coordinates as the translate - meaning the c followed by 0 0 0 0 and then the end coordinates.<br>
+            Make the animation use the offset-distance rather than translate - you might have to modify the starting coordinates, but that should replicate the straight line animation.<br>
+            Then start moving the control-points up, and watch the arc be more and more arched ... 
+          </p>
+        <p>Make a crazier curve if you feel like it ... */
