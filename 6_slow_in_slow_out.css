@@ -1,0 +1,21 @@
+
+
+.show{
+    animation: show 2s ease-out 1 forwards;
+}
+
+.hide{
+    animation: hide 5s ease-in 1 forwards;
+}
+
+
+
+@keyframes show {
+    to {transform: translateX(20vw)}
+    
+}
+
+@keyframes hide {
+    to {transform: translateX(-20vw)}
+    
+}
